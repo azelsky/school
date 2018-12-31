@@ -4,10 +4,11 @@ import Answer from './Answer'
 
 class Question extends Component {
     render() {
+        const {counterOfProgress, question} = this.props;
         return (
             <Row>
                 <Col md={12}><h2>{this.props.question.question}</h2></Col>
-                {this.props.question.answer.map(answer => <Answer key = {answer.text }answer={answer}/>)}
+                {question.answer.map(answer => <Answer key = {answer.text }answer={answer} counterOfProgress={counterOfProgress}/>)}
             </Row>
         );
     }

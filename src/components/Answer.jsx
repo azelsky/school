@@ -6,7 +6,7 @@ class Answer extends Component {
         const {answer: {text}} = this.props
         return (
             <Col md={12}>
-                <Button bsStyle="primary" bsSize="large" block>
+                <Button bsStyle="primary" bsSize="sm" block onClick={this.props.counterOfProgress}>
                     <p>{`${text}`}</p>
                 </Button>
             </Col>

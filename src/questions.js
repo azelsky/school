@@ -21,7 +21,7 @@ export const questions = [
         ]
     },
     {
-        question: 'today is ',
+        question: 'today is 1',
         answer: [
             {
                 text: '1',
@@ -38,7 +38,7 @@ export const questions = [
         ]
     },
     {
-        question: 'today is ',
+        question: 'today is 2',
         answer: [
             {
                 text: '1',
