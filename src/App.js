@@ -1,28 +1,34 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import {questions} from './questions'
+import {Grid, Row, Col, ProgressBar} from 'react-bootstrap'
+
+import Question from './components/Question'
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+    constructor(props) {
+        super(props);
+        this.state = {
+            counterOfAnswer: 0
+        }
+    }
+
+    counterOfProgress() {
+    }
+
+    render() {
+        return (
+            <Grid>
+                <Row>
+                    <Col md={12}>
+                        <ProgressBar bsStyle="info" now={20}/>
+                    </Col>
+                    <Col md={12}>
+                        <Question question={questions[0]}/>
+                    </Col>
+                </Row>
+            </Grid>
+        );
+    }
 }
 
 export default App;
