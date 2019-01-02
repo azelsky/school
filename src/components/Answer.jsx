@@ -3,10 +3,10 @@ import {Button, Col} from 'react-bootstrap';
 
 class Answer extends Component {
     render() {
-        const {answer: {text}} = this.props
+        const {answer: {text, correctly}, counterOfProgress} = this.props
         return (
             <Col md={12}>
-                <Button bsStyle="primary" bsSize="sm" block onClick={this.props.counterOfProgress}>
+                <Button bsStyle="primary" bsSize="sm" block onClick={() => {counterOfProgress(correctly)}}>
                     <p>{`${text}`}</p>
                 </Button>
             </Col>

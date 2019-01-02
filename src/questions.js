@@ -1,23 +1,27 @@
 export const questions = [
     {
-        question: 'today is ',
+        question: 'Коли помер Цой?',
         answer: [
             {
-                text: 'lsdjflsjcfsdfcnsjd fcmsd;jcm;fljsc; ;lkfjsdl;kjg;lsdfjg;ljsdf',
-                correctly: false
-            },
-            {
-                text: 'lsdjflsjcfsdfcns jdfcmsd;jcm;fljsc;lfksjd ;lkfjsdl;kjg;lsdfjg;ljsdf',
-                correctly: false
-            },
-            {
-                text: 'asfsadj aljas flsjd jfas fj;alsf ja jasd',
+                text: 'Цой Живий',
                 correctly: true
             },
             {
-                text: 'asdlfkjasdlkfja ssa lkjadfl sdfljsdf jsdlfkjs akjsdf ljaslfjsadlfj asjs lkjsadf ajf ;ldsjf asf as',
+                text: 'Не знаю',
                 correctly: false
             },
+            {
+                text: 'Не знаю',
+                correctly: true
+            },
+            {
+                text: 'Не знаю',
+                correctly: false
+            },
+            {
+                text: '1991',
+                correctly: false
+            }
         ]
     },
     {
@@ -32,7 +36,7 @@ export const questions = [
                 correctly: false
             },
             {
-                text: '3',
+                text: 'asdfasdfasdfadf',
                 correctly: true
             },
         ]
@@ -53,5 +57,23 @@ export const questions = [
                 correctly: true
             },
         ]
-    }
+    },
+    {
+        question: 'іфв',
+        answer: [
+            {
+                text: '1',
+                correctly: false
+            },
+            {
+                text: '2',
+                correctly: false
+            },
+            {
+                text: '3',
+                correctly: true
+            },
+        ]
+    },
+
 ];
